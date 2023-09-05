@@ -1,6 +1,52 @@
 body{
     font-family: 'Work Sans', sans-serif;
+    margin: 0px;
 }
-.flex{
+a{
+    text-decoration: none;
+    color: #0B0223;
+}
+h1,h2,h3,p{
+    margin: 0px auto;
+}
+main img{
+    width: 100%;
+}
+.header .flex{
     display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.space-between{
+    justify-content: space-between;
+}
+header{
+    padding: 7px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.bg{
+    background-color: #E7E6E9;
+    padding: 7px 12px 7px 12px;
+    border-radius: 5px;
+}
+.banner{
+    background-image: url("asset/images/Group-14.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+@media screen and (max-width: 767px) {
+    .header .flex{
+        flex-direction: column;
+}
+    .header .bg{
+        flex-direction: row;
+}
+    }
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
 }
